@@ -1,0 +1,50 @@
+@import "tipography";
+.principal {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  .logo {
+    width: 380px;
+
+    .atendimento {
+     margin-top: 60px;
+     width: 280px;
+     .info1 {
+      @include paragrafo(14);
+      padding-bottom: 15px;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+    .info2 {
+      @include paragrafo(14);
+      padding-bottom: 15px;
+      border-right: 2px solid black;
+    }
+   .telefone {
+      font-family: "PT Mono",monospace;
+      font-size: 1.125em;
+      color: #988c77;
+      &::after {
+        content: '/ / / / ';
+        letter-spacing: -90px;
+        margin-top: 40px;
+        display: block;
+        color: #2a2426;
+        font-size: 220px;
+      }
+    }
+
+    
+    }
+  }
+  .imagem-cozinha {
+    max-width: 600px;
+    border: 10px solid #cbc6b9;
+    img {
+      width: 100%;
+    }
+  } 
+}

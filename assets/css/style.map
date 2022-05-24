@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_fundo.scss",
+		"../scss/_principal.scss",
+		"../scss/_tipography.scss"
+	],
+	"sourcesContent": [
+		"@import \"fundo\";\r\n@import \"principal\";\r\n@import \"tipography\"",
+		"* {\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\nbody {\r\n  background: #edece4;\r\n  border: 10px solid #cbc6b9\r\n}",
+		"@import \"tipography\";\r\n.principal {\r\n  max-width: 1200px;\r\n  margin: 50px auto;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-around;\r\n  align-items: flex-start;\r\n  .logo {\r\n    width: 380px;\r\n\r\n    .atendimento {\r\n     margin-top: 60px;\r\n     width: 280px;\r\n     .info1 {\r\n      @include paragrafo(14);\r\n      padding-bottom: 15px;\r\n      border-bottom: 2px solid black;\r\n      border-right: 2px solid black;\r\n    }\r\n    .info2 {\r\n      @include paragrafo(14);\r\n      padding-bottom: 15px;\r\n      border-right: 2px solid black;\r\n    }\r\n   .telefone {\r\n      font-family: \"PT Mono\",monospace;\r\n      font-size: 1.125em;\r\n      color: #988c77;\r\n      &::after {\r\n        content: '/ / / / ';\r\n        letter-spacing: -90px;\r\n        margin-top: 40px;\r\n        display: block;\r\n        color: #2a2426;\r\n        font-size: 220px;\r\n      }\r\n    }\r\n\r\n    \r\n    }\r\n  }\r\n  .imagem-cozinha {\r\n    max-width: 600px;\r\n    border: 10px solid #cbc6b9;\r\n    img {\r\n      width: 100%;\r\n    }\r\n  } \r\n}",
+		"@mixin paragrafo($tamanho){\r\n  @if $tamanho == 14 {\r\n  font-family: \"PT Mono\",monospace;\r\n  font-size: 1.125em;\r\n  line-height: 1.6em;\r\n  }\r\n  @else if $tamanho == 18 {\r\n  font-size: 1.5em;\r\n  font-family: \"Aref Ruqaa\", serif;\r\n  line-height: 1.6em;\r\n  margin-bottom: 1em;     \r\n  }\r\n  @else if $tamanho == 22 {\r\n    font-family: \"PT Mono\", monospace;\r\n    font-size: 1.125em;\r\n    line-height: 1.6em;\r\n    text-transform: uppercase;\r\n  }\r\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;;AACD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,kBACV;CAAC;;;ACND,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,SAAS;EACjB,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,UAAU;CA0CxB;;;AAhDD,AAOE,UAPQ,CAOR,KAAK,CAAC;EACJ,KAAK,EAAE,KAAK;CAgCb;;;AAxCH,AAUI,UAVM,CAOR,KAAK,CAGH,YAAY,CAAC;EACZ,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,KAAK;CA2BZ;;;AAvCL,AAaK,UAbK,CAOR,KAAK,CAGH,YAAY,CAGX,MAAM,CAAC;ECZV,WAAW,EAAE,mBAAmB;EAChC,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,KAAK;EDYd,cAAc,EAAE,IAAI;EACpB,aAAa,EAAE,eAAe;EAC9B,YAAY,EAAE,eAAe;CAC9B;;;AAlBL,AAmBI,UAnBM,CAOR,KAAK,CAGH,YAAY,CASZ,MAAM,CAAC;EClBT,WAAW,EAAE,mBAAmB;EAChC,SAAS,EAAE,OAAO;EAClB,WAAW,EAAE,KAAK;EDkBd,cAAc,EAAE,IAAI;EACpB,YAAY,EAAE,eAAe;CAC9B;;;AAvBL,AAwBG,UAxBO,CAOR,KAAK,CAGH,YAAY,CAcb,SAAS,CAAC;EACP,WAAW,EAAE,mBAAmB;EAChC,SAAS,EAAE,OAAO;EAClB,KAAK,EAAE,OAAO;CASf;;;AApCL,AA4BM,UA5BI,CAOR,KAAK,CAGH,YAAY,CAcb,SAAS,AAIL,OAAO,CAAC;EACP,OAAO,EAAE,UAAU;EACnB,cAAc,EAAE,KAAK;EACrB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,KAAK;CACjB;;;AAnCP,AAyCE,UAzCQ,CAyCR,eAAe,CAAC;EACd,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,kBAAkB;CAI3B;;;AA/CH,AA4CI,UA5CM,CAyCR,eAAe,CAGb,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ"
+}
