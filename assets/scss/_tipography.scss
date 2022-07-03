@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
 @mixin paragrafo($tamanho){
   @if $tamanho == 14 {
   font-family: "PT Mono",monospace;
@@ -6,14 +7,16 @@
   }
   @else if $tamanho == 18 {
   font-size: 1.5em;
-  font-family: "Aref Ruqaa", serif;
+  font-family: "Aref Ruqaa";
   line-height: 1.6em;
-  margin-bottom: 1em;     
+  margin-bottom: 1em;  
   }
   @else if $tamanho == 22 {
     font-family: "PT Mono", monospace;
     font-size: 1.125em;
     line-height: 1.6em;
     text-transform: uppercase;
+    color: #2a2426;
   }
+
 }

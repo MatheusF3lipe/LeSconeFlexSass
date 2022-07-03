@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
 /* line 1, ../../../../../Documents/LeScone/assets/scss/_fundo.scss */
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-/* line 5, ../../../../../Documents/LeScone/assets/scss/_fundo.scss */
+/* line 6, ../../../../../Documents/LeScone/assets/scss/_fundo.scss */
 body {
   background: #edece4;
   border: 10px solid #cbc6b9;
 }
 
-/* line 2, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 1, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal {
   max-width: 1200px;
   margin: 50px auto;
@@ -20,18 +22,18 @@ body {
   align-items: flex-start;
 }
 
-/* line 9, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 8, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .logo {
   width: 380px;
 }
 
-/* line 12, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 11, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .logo .atendimento {
   margin-top: 60px;
   width: 280px;
 }
 
-/* line 15, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 14, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .logo .atendimento .info1 {
   font-family: "PT Mono",monospace;
   font-size: 1.125em;
@@ -41,7 +43,7 @@ body {
   border-right: 2px solid black;
 }
 
-/* line 21, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 20, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .logo .atendimento .info2 {
   font-family: "PT Mono",monospace;
   font-size: 1.125em;
@@ -50,14 +52,14 @@ body {
   border-right: 2px solid black;
 }
 
-/* line 26, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 25, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .logo .atendimento .telefone {
   font-family: "PT Mono",monospace;
   font-size: 1.125em;
   color: #988c77;
 }
 
-/* line 30, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 29, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .logo .atendimento .telefone::after {
   content: '/ / / / ';
   letter-spacing: -90px;
@@ -67,15 +69,85 @@ body {
   font-size: 220px;
 }
 
-/* line 43, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 42, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .imagem-cozinha {
   max-width: 600px;
   border: 10px solid #cbc6b9;
 }
 
-/* line 46, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
+/* line 45, ../../../../../Documents/LeScone/assets/scss/_principal.scss */
 .principal .imagem-cozinha img {
   width: 100%;
+}
+
+/* line 1, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* line 9, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio h1 {
+  font-family: "PT Mono",monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  text-transform: uppercase;
+  margin-right: 150px;
+}
+
+/* line 17, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio h1::after {
+  content: '';
+  display: inline-block;
+  width: 450px;
+  height: 2px;
+  background: black;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+/* line 28, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio .entradas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* line 34, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio .entradas ul {
+  font-family: "PT Mono",monospace;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  line-height: 1.94444em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 41, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio .entradas ul h2 {
+  font-size: 1.5em;
+  font-family: "Aref Ruqaa";
+  line-height: 1.6em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* line 47, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio .entradas .pic {
+  max-width: 100px;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+/* line 51, ../../../../../Documents/LeScone/assets/scss/_cardapio.scss */
+.cardapio .entradas .pic img {
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #cbc6b9;
 }
 
 /*# sourceMappingURL=style.css.map */
