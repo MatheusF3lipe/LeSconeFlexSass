@@ -7,3 +7,9 @@ body {
   background: #edece4;
   border: 10px solid #cbc6b9
 }
+
+@media (min-width:200px ) {
+ body {
+  border: none;
+ }
+}

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+$cor: #2a2426; 
+$cor-preço: #988c77;
+
 @mixin paragrafo($tamanho){
   @if $tamanho == 14 {
   font-family: "PT Mono",monospace;
@@ -18,5 +22,12 @@
     text-transform: uppercase;
     color: #2a2426;
   }
+
+}
+
+@mixin subtitulo() {
+  color: $cor;
+  font-family: "Aref Ruqaa", serif;
+  margin-bottom: 24px;
 
 }
